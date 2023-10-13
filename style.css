@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(232, 232, 255);
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+.tit{
+    color: rgb(18, 101, 255);
+    font-size: 40px;
+}
+.discrip{
+    color: black;
+    font-size: 30px;
+    width: 500px;
+    margin-top: -40px;
+}
+.right-side{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 3px 3px 1px 2px rgb(223, 221, 221);
+    border-radius: 5px;
+    margin-right: 220px;
+}
+form{
+    text-align: center;
+    margin-top: 20px;
+}
+input{
+    font-size: 15px;
+    margin-bottom: 20px;
+    width:280px ;
+    height: 40px;
+    border-color: rgb(221, 221, 221);
+    border-radius: 5px;
+}
+input:hover{
+    border-color:rgb(18, 101, 255);
+}
+.log{
+    width:280px ;
+    height: 40px;
+    border-radius: 5px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(18, 101, 255);
+}
+.forget{
+    margin-top: -10px;
+    color: rgb(18, 101, 255);
+}
+.create{
+    background-color: rgb(34, 209, 34);
+    color: white;
+    width: 180px;
+}

@@ -1,0 +1,634 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f0f2f5;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0px 1px 3px rgb(167, 166, 166) ;
+    position: sticky; 
+    /* sticky is to be constant while scrolling */
+}
+.left-side{
+    display: flex;
+    padding: 10px;
+}
+.left-side input{
+    border: none;
+    background-color: rgb(231, 229, 229);
+    border-radius: 50px;
+    padding-left: 40px;
+    position: relative;
+}
+.fa-magnifying-glass{
+    position: absolute;
+    top: 22px;
+    left: 70px;
+    color:rgb(155, 153, 153) ;
+}
+.left-side input:focus{
+    outline: none;
+}
+.searchFacebook{
+    padding-left: 20px;
+    display: flex;
+    justify-content: left;
+    width: 200px;
+    background-color: rgb(236, 226, 226);
+    height: 40px;
+    align-items: center;
+    border-radius: 50px;
+    color: rgb(110, 107, 107);
+}
+.facebook-logo{
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+}
+.center-side{
+    display: flex;
+    font-size: 25px;
+    align-items: flex-start;
+    padding-bottom: 15px;
+}
+.center-side i{
+    padding:16px 20px;
+    margin:0px 10px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.active{
+    color: #1877f2;
+    border-bottom: 3px solid #1877f2;
+    border-radius: 5px;
+}
+.otherActive{
+    color: rgb(126, 124, 124);
+}
+.otherActive i:hover{
+    background-color: rgb(215, 221, 226);
+}
+.right-side{
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+.right-side p{
+    font-weight: bold;
+}
+.right-side i{
+    color: gray;
+    font-size: 20px;
+    background-color: rgb(231, 229, 229);
+    padding: 10px 10px;
+    margin: 0px 10px;
+    border-radius: 50%;
+    transition: scale ease .5s;
+}
+i .massengerLogo{
+    width: 20px;
+    height: 20px;
+    filter: grayscale(5)
+}
+.right-side i:hover{
+    scale:1.2;
+    background-color:#1877f2 ;
+}
+.profilePhoto{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0px 10px;
+    transition: scale ease .5s;
+}
+.profilePhoto:hover{
+    scale: 1.2;
+}
+.leftSec{
+    background-color: #f0f2f5;
+    width: 25%;
+    /* position: fixed; */
+    /* position: sticky; */
+    overflow: hidden;
+    height: 91vh;
+}
+.leftSec:hover{
+    overflow: scroll;
+}
+.leftSec div {
+    display: flex;
+    padding: 10px 5px 20px 4px;
+}
+.leftSec div p{
+    font-weight: bold;
+}
+.leftSec div img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding-right: 7px;
+}
+.rightSec{
+    position: sticky;
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    display: block;
+    width: 25%;
+    height: 91vh;
+    overflow: hidden;
+}
+.titRightSec{
+    color: rgb(146, 144, 144);
+    font-size: 25px;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+.tit-rightSec div{
+    display: flex;
+    padding-left: 70px;
+    padding-top: 20px;
+}
+.tit-rightSec div h3{
+    display: flex;
+    font-weight: bold;
+    width: 20px;
+    padding-left: 20px;
+    align-items: center;
+}
+.Image1{
+    width: 130px;
+    height: 70px;
+    border-radius:10px;
+}
+.Image2{
+    width:80px;
+    height: 80px;
+    border-radius: 10px;
+}
+.midSec{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 65px;
+    color: rgb(146, 144, 144);
+}
+.midSec p{
+    font-weight: bold;
+    font-size: 20px;
+}
+.midSec div{
+    padding-left: 100px;
+}
+.midSec div i{
+    padding-left: 10px;
+}
+.lastSec{
+    padding-left: 65px;
+}
+.lastSec div{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.lastSec p{
+    color: rgb(146, 144, 144);
+}
+.lastSec img{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.rightSec:hover{
+    overflow: scroll;
+}
+.middeleSec{
+    display: flex;
+    position: absolute;
+    top: 80px;
+    right: 20%;
+}
+.active-story{
+    background-color: white;
+    width:120px;
+    height: 200px;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+}
+.active-story img{
+    height: 150px;
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px rgb(167, 166, 166) ;
+}
+.active-story i{
+    color: white;
+    font-size: 30px;
+    border: 5px solid rgb(255, 255, 255);
+    background-color: #1877f2;
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: 45px;
+}
+.active-story p{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.active-story:hover{
+    scale: 1.1;
+}
+.stories{
+    display: flex;
+}
+.stories .other-story img:hover{
+    scale: 1.1;
+}
+.middeleSec .other-story > img{
+    transition: all ease 0.5s   ;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 120px;
+    height: 200px;
+    box-shadow: 3px 3px 3px rgb(167, 166, 166) ;
+}
+.profile-stories{
+    margin-left: 5px;
+    margin-top: -190px;
+}
+.profile-stories img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 100px;
+    border: 5px solid  #1877f2;
+}
+.nameStories{
+    color: white;
+    display: flex;
+    position: absolute;
+    top: 170px;
+    /* margin-right: 60px; */
+}
+.nameStories p{
+    text-align: center;
+    width: 110px;
+    margin-right: 25px;
+    font-weight: bold;
+}
+.part1YourMind{
+    display: flex;
+}
+.yourMind{
+    position: absolute;
+    top: 310px;
+    right: 320px;
+    width: 660px;
+    height:130px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(179, 174, 174);
+    background-color: white;
+}
+.yourMind .part1YourMind > img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 20px ;
+    margin-top: 20px;
+}
+.yourMind input{
+    margin-top: 25px;
+    width: 550px;
+    height: 30px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 20px;
+    border: none;
+    margin-left: 10px;
+}
+.yourMind hr{
+    width: 620px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.actionsMind{
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    margin-left: 100px;
+    margin-top: 10px;
+    font-size: 19px;
+}
+.actionsMind div{
+    display: flex;
+    transition: all ease 0.5s;
+}
+.actionsMind div p{
+    margin-left: 10px;
+    color: rgb(110, 107, 107);
+}
+.yourMind input:hover{
+    background-color: rgb(204, 204, 204);
+}
+.actionsMind div:hover{
+    background-color: rgb(204, 204, 204);
+}
+.firstPost{
+    width: 660px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 470px;
+    right: 320px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(212, 212, 212);
+}
+.titFirstPost{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.titFirstPost img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.NameAndTime{
+    margin-left: 20px;
+}
+.NameAndTime p{
+    color: rgb(184, 177, 177);
+    font-size: 15px;
+}
+.firstPost > p{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.firstPost i{
+    margin-left: 440px;
+    margin-top: 20px;
+}
+.imageFirstPost{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 610px;
+    height:300px ;
+    object-fit: cover;
+}
+.firstPost hr{
+    margin-top: 20px;
+    width: 590px;
+    margin-left: 30px;
+}
+.reacts div{
+    display : flex;
+    margin-left: -220px;
+}
+.reacts {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    left: -140px;
+    color: rgb(112, 112, 112);
+}
+.captionReacts{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 500px;
+    margin-left: 100px;
+    color: rgb(184, 177, 177);
+}
+.captionReacts p:hover{
+    background-color: rgb(197, 197, 197);
+}
+.SecPost{
+    width: 660px;
+    height: 180px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 1000px;
+    right: 320px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(212, 212, 212);
+}
+.titSecPost{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.titSecPost img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.NameAndTime{
+    margin-left: 20px;
+}
+.NameAndTime p{
+    color: rgb(184, 177, 177);
+    font-size: 15px;
+}
+.SecPost > p{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.SecPost i{
+    margin-left: 440px;
+    margin-top: 20px;
+}
+.SecPost hr{
+    margin-top: 20px;
+    width: 590px;
+    margin-left: 30px;
+}
+.reacts2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    left: -140px;
+    color: rgb(112, 112, 112);
+}
+.reacts2 div{
+    display : flex;
+    margin-left: -220px;
+}
+.captionReacts2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 500px;
+    margin-left: 100px;
+    color: rgb(184, 177, 177);
+}
+.captionReacts2 p:hover{
+    background-color: rgb(197, 197, 197);
+}
+.thirdPost{
+    width: 660px;
+    height: 510px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 1220px;
+    right: 320px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(212, 212, 212);
+}
+.titThirdPost{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.titThirdPost img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.NameAndTime{
+    margin-left: 20px;
+}
+.NameAndTime p{
+    color: rgb(184, 177, 177);
+    font-size: 15px;
+}
+.thirdPost > p{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.thirdPost i{
+    margin-left: 440px;
+    margin-top: 20px;
+}
+.thirdPost hr{
+    margin-top: 20px;
+    width: 590px;
+    margin-left: 30px;
+}
+.Birthday{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 620px;
+    height: 300px;
+    object-fit: cover;
+}
+.thirdPost hr{
+    margin-top: 20px;
+    width: 590px;
+    margin-left: 30px;
+}
+.FourthPost{
+    width: 660px;
+    height: 510px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 1220px;
+    right: 320px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(212, 212, 212);
+}
+.titFourthPost{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.titFourthPost img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.NameAndTime{
+    margin-left: 20px;
+}
+.NameAndTime p{
+    color: rgb(184, 177, 177);
+    font-size: 15px;
+}
+.FourthPost > p{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.FourthPost i{
+    margin-left: 440px;
+    margin-top: 20px;
+}
+.FourthPost hr{
+    margin-top: 20px;
+    width: 590px;
+    margin-left: 30px;
+}
+.CuteKids{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 620px;
+    height: 300px;
+    object-fit: cover;
+}
+.thirdPost hr{
+    margin-top: 20px;
+    width: 590px;
+    margin-left: 30px;
+}
+
+
+
+.FifthPost{
+    width: 660px;
+    height: 190px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 1770px;
+    right: 320px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgb(212, 212, 212);
+}
+.titFifthPost{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.titFifthPost img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.NameAndTime{
+    margin-left: 20px;
+}
+.NameAndTime p{
+    color: rgb(184, 177, 177);
+    font-size: 15px;
+}
+.FifthPost > p{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.FifthPost i{
+    margin-left: 440px;
+    margin-top: 20px;
+}
+.FifthPost hr{
+    margin-top: 20px;
+    width: 590px;
+    margin-left: 30px;
+}
+.FifthPost hr{
+    margin-top: 20px;
+    width: 590px;
+    margin-left: 30px;
+}

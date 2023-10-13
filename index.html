@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="content">
+        <div class="left-side">
+            <div class="tit">
+                <h2>Facebook</h2>
+            </div>
+            <div class="discrip">
+                <h4>Facebook helps you connect and share
+                    with poeple in your life.
+                </h4>
+            </div>
+        </div>
+        <div class="right-side">
+            <form name="loginForm" action="facebook.html" onsubmit="return validateForm()">
+                <input type="text" id="name" name="name"  placeholder="Email address or phone numbwer"><br>
+                <input type="password" id="password" name="password" placeholder="password" required><br>
+                <input type="submit" value="Login"  class="log" id="LOg">
+                <p class="forget">Forgetten password?</p>
+                <hr>
+                <input type="submit" value="Create new account" class="create"> 
+            </form>
+        </div>
+    </section>
+    <script src="scrept.js"></script>
+</body>
+</html>
